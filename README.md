@@ -32,25 +32,30 @@ This project demonstrates the deployment of a Flask application on AWS using Ter
 
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/ishagothwad/website-deployment-by-AWS-.git
+   cd repo name
    ```
 
 2. **Initialize Terraform**:
    ```sh
    terraform init
    ```
+   
+3. **Preview the changes Terraform will make**:
+   ```sh
+   terraform plan
+   ```  
 
-3. **Apply the Terraform configuration**:
+4. **Apply the Terraform configuration**:
    ```sh
    terraform apply
    ```
 
-4. **Access the Flask application**:
+5. **Access the Flask application**:
    - After the resources are created, note the public IP of the EC2 instance from the Terraform output.
    - Open a web browser and navigate to `http://<public-ip>` to see the Flask application.
 
-5. **SSH into the EC2 instance** (optional):
+6. **SSH into the EC2 instance**:
    ```sh
    ssh -i key ubuntu@<public-ip>
    ```
@@ -67,6 +72,3 @@ terraform destroy
 - 🔑 Ensure your AWS credentials are properly configured before running Terraform commands.
 - 🔐 The private key file (`key`) should be kept secure and not shared publicly.
 
----
-
-Feel free to customize this `README.md` file to better fit your project specifics or to add any additional instructions!
